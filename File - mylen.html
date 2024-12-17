@@ -1,0 +1,45 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App</title>
+<style>
+body { font-family: sans-serif; }
+.container { width: 80%; margin: 0 auto; }
+.current-weather { text-align: center; }
+.current-temp { font-size: 4em; }
+.forecast { display: flex; }
+.daily-forecast { flex: 1; }
+.hourly-forecast { flex: 1; }
+.forecast-item { border: 1px solid #ccc; padding: 10px; margin: 5px; }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>My Weather App</h1>
+
+  <div class="current-weather">
+    <h2>London, UK</h2>
+    <p>10:30 AM</p>
+    <div class="current-temp">20°C</div>
+    <img src="sunny.png" alt="Sunny" width="100">  <!-- Placeholder image -->
+  </div>
+
+  <div class="forecast">
+    <div class="hourly-forecast">
+      <h3>Hourly Forecast</h3>
+      <div class="forecast-item">11:00 AM - Sunny</div>
+      <div class="forecast-item">12:00 PM - Partly Cloudy</div>
+      <div class="forecast-item">1:00 PM - Cloudy</div>
+      </div>
+    <div class="daily-forecast">
+      <h3>Daily Forecast</h3>
+      <div class="forecast-item">Mon: 22°C/15°C - Sunny</div>
+      <div class="forecast-item">Tue: 20°C/12°C - Cloudy</div>
+      <div class="forecast-item">Wed: 18°C/10°C - Rainy</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
